@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pit Report · Archive</title>
+  <meta name="theme-color" content="#f2f3f7">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="alternate" type="application/rss+xml" title="The Pit Report RSS Feed" href="feed.xml">
+</head>
+<body>
+
+<nav class="edition-nav">
+  <a href="index.html">← Latest Edition</a>
+  <span class="nav-right">
+    <span class="nav-archive-label">📁 Archive</span>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode">🌙</button>
+  </span>
+</nav>
+
+<header class="masthead">
+  <div class="masthead-vol">Vol. I · Est. November 2026 · Bone Daddy Crew</div>
+  <h1 class="masthead-title">The Pit Report</h1>
+  <div><span class="masthead-diamond">◆</span><span class="masthead-tagline">Every edition. Every wipeout. Forever.</span><span class="masthead-diamond">◆</span></div>
+  <hr class="masthead-rule">
+  <div class="masthead-dateline">Archive · All Editions</div>
+</header>
+
+<div class="archive-wrap">
+  <div class="archive-search-bar">
+    <input type="text" id="archiveSearch" placeholder="Search by date, trader, or headline…" autocomplete="off" aria-label="Search editions">
+  </div>
+
+  <div class="archive-month">November 2026</div>
+  <div class="archive-entry" data-search="2026-11-25 wednesday some guy named stankgravy just walked in and robbed the place a rookie with zero finished crew comps is up +$6,068.13 by 11:12 am and jabbing a man with $0.00. uncle_jim&#x27;s four-day streak sits in cash, slowponies goes all-in again, and the hall of shame is open for business.">
+    <div class="ae-meta">
+      <span class="ae-num">No. 1</span>
+      <span class="ae-date">Wednesday, November 25, 2026</span>
+      <span class="badge-latest">Latest</span>
+    </div>
+    <a class="ae-headline" href="2026-11-25.html">Some Guy Named StankGravy Just Walked In and Robbed the Place</a>
+    <p class="ae-teaser">A rookie with zero finished crew comps is up +$6,068.13 by 11:12 AM and jabbing a man with $0.00. Uncle_Jim&#x27;s four-day streak sits in cash, SlowPonies goes all-in again, and the Hall of Shame is open for business.</p>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <p>The Pit Report · Vol. I · Archive</p>
+  <p>A Bone Daddy crew column. All money simulated. Not affiliated with PitViper.</p>
+  <p><a href="index.html">← Latest Edition</a> · <a href="feed.xml">RSS Feed</a></p>
+</footer>
+
+<script>
+  (function () {
+    var input = document.getElementById('archiveSearch');
+    input.addEventListener('input', function () {
+      var q = input.value.toLowerCase().trim();
+      document.querySelectorAll('.archive-entry').forEach(function (entry) {
+        var text = entry.getAttribute('data-search') || '';
+        entry.style.display = (!q || text.indexOf(q) !== -1) ? '' : 'none';
+      });
+      document.querySelectorAll('.archive-month').forEach(function (month) {
+        var el = month.nextElementSibling, any = false;
+        while (el && !el.classList.contains('archive-month')) {
+          if (el.style.display !== 'none') { any = true; }
+          el = el.nextElementSibling;
+        }
+        month.style.display = any ? '' : 'none';
+      });
+    });
+  })();
+</script>
+
+<script>
+  (function () {
+    var btn = document.getElementById('modeToggle');
+    function apply(dark) {
+      document.body.classList.toggle('dark-mode', dark);
+      btn.textContent = dark ? '☀️' : '🌙';
+    }
+    var saved = null;
+    try { saved = localStorage.getItem('pit-theme'); } catch (e) {}
+    apply(saved === 'dark');
+    btn.addEventListener('click', function () {
+      var dark = !document.body.classList.contains('dark-mode');
+      apply(dark);
+      try { localStorage.setItem('pit-theme', dark ? 'dark' : 'light'); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>

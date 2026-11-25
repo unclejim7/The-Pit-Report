@@ -1,0 +1,24 @@
+{
+  "publication": "The Pit Report",
+  "site_url": "https://unclejim7.github.io/The-Pit-Report/",
+  "latest_edition": 1,
+  "editions": [
+    {
+      "edition": 1,
+      "date": "2026-11-25",
+      "day_of_week": "Wednesday",
+      "filename": "2026-11-25.html",
+      "headline": "Some Guy Named StankGravy Just Walked In and Robbed the Place",
+      "teaser": "A rookie with zero finished crew comps is up +$6,068.13 by 11:12 AM and jabbing a man with $0.00. Uncle_Jim's four-day streak sits in cash, SlowPonies goes all-in again, and the Hall of Shame is open for business.",
+      "stats": {
+        "btc": 59115,
+        "leader": "StankGravy",
+        "leader_pnl": 6068.13,
+        "uncle_jim_pnl": 1284.39,
+        "uncle_jim_rank": 3,
+        "streak": "Uncle_Jim W4",
+        "crew_comps_finished": 28
+      }
+    }
+  ]
+}
