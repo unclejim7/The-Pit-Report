@@ -1,8 +1,26 @@
 {
   "publication": "The Pit Report",
   "site_url": "https://unclejim7.github.io/The-Pit-Report/",
-  "latest_edition": 1,
+  "latest_edition": 2,
   "editions": [
+    {
+      "edition": 2,
+      "date": "2026-11-26",
+      "day_of_week": "Thursday",
+      "filename": "2026-11-26.html",
+      "headline": "The Accountant Woke Up From His Nap and Carved the Whole Crew Like a Thanksgiving Turkey",
+      "teaser": "Uncle_Jim turns a lunchtime +$1,284.39 into a record +$10,964.94, beats StankGravy by $4,491.85 and stretches the streak to W5. SlowPonies round-trips $10,668.57 in an afternoon, and XgonGivIt2ya says \"Look over your shoulder\" from fourth place, down $9,222.31.",
+      "stats": {
+        "btc": 60480,
+        "winner": "Uncle_Jim",
+        "winner_pnl": 10964.94,
+        "leader": "Uncle_Jim",
+        "uncle_jim_pnl": 0.0,
+        "uncle_jim_rank": 1,
+        "streak": "Uncle_Jim W5",
+        "crew_comps_finished": 29
+      }
+    },
     {
       "edition": 1,
       "date": "2026-11-25",
