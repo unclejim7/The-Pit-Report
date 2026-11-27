@@ -1,8 +1,26 @@
 {
   "publication": "The Pit Report",
   "site_url": "https://unclejim7.github.io/The-Pit-Report/",
-  "latest_edition": 2,
+  "latest_edition": 3,
   "editions": [
+    {
+      "edition": 3,
+      "date": "2026-11-27",
+      "day_of_week": "Friday",
+      "filename": "2026-11-27.html",
+      "headline": "XgonGivIt2ya Bet Everything But 97 Cents and Mugged the Accountant on Thanksgiving",
+      "teaser": "XgonGivIt2ya goes from −$9,222.31 to a +$8,061.88 win with $0.97 left in cash, beating Uncle_Jim by $979.30 and killing the W5 streak. All five entrants finish green, CrucialTaunt somehow finishes last while making money, and the two rivals bet opposite sides of the same Bitcoin strike and send each other the same chirp.",
+      "stats": {
+        "btc": 61628,
+        "winner": "XgonGivIt2ya",
+        "winner_pnl": 8061.88,
+        "leader": "Uncle_Jim",
+        "uncle_jim_pnl": 0.0,
+        "uncle_jim_rank": 1,
+        "streak": "XgonGivIt2ya W1",
+        "crew_comps_finished": 30
+      }
+    },
     {
       "edition": 2,
       "date": "2026-11-26",
