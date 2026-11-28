@@ -1,8 +1,26 @@
 {
   "publication": "The Pit Report",
   "site_url": "https://unclejim7.github.io/The-Pit-Report/",
-  "latest_edition": 3,
+  "latest_edition": 4,
   "editions": [
+    {
+      "edition": 4,
+      "date": "2026-11-28",
+      "day_of_week": "Saturday",
+      "filename": "2026-11-28.html",
+      "headline": "Uncle_Jim Turned $10,000 Into $30.54 While XgonGivIt2ya Went Back-to-Back With His Hands in His Pockets",
+      "teaser": "Uncle_Jim cashes five small winners and still finishes −$9,969.46 with $0.00 in cash, while XgonGivIt2ya wins Friday at +$1,632.85 sitting 100% in cash for W2. SlowPonies wipes to zero, StankGravy passes the accountant as the crew's top earner without a single win, and the two rivals send the same chirp for the second straight day.",
+      "stats": {
+        "btc": 59693,
+        "winner": "XgonGivIt2ya",
+        "winner_pnl": 1632.85,
+        "leader": "SlowPonies",
+        "uncle_jim_pnl": -2021.95,
+        "uncle_jim_rank": 3,
+        "streak": "XgonGivIt2ya W2",
+        "crew_comps_finished": 31
+      }
+    },
     {
       "edition": 3,
       "date": "2026-11-27",
